@@ -62,7 +62,7 @@ public class Main {
             if (a == 0) {
                 System.out.print(numbers3[0] + ".");
             } else {
-                System.out.print(numbers3[a] + ", ");
+                System.out.print(numbers3[a] + ", ");// про метод Arrays.toString() еще не знал))
             }
             b -= 2;
             a -= 2;
@@ -77,7 +77,7 @@ public class Main {
                 System.out.println(numbers1[i]);
                 break;
         }
-        System.out.print(numbers1[i]+", ");
+        System.out.print(numbers1[i]+", ");//Idea ругалась на метод Arrays.toString(), поэтому так))
         }
         System.out.println();
 
