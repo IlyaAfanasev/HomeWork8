@@ -23,19 +23,19 @@ public class Main {
         }
         System.out.println();
         int[] numbers3 = new int[10];
-        int j = 1;
-        int i = 0;
-        while (i < numbers3.length) {
-            numbers3[i] = 0;
-            numbers3[j] = 1;
-            System.out.print(numbers3[i] + ", ");
-            if (j == numbers3.length - 1) {
+        int b = 1;
+        int a = 0;
+        while (a < numbers3.length) {
+            numbers3[a] = 0;
+            numbers3[b] = 1;
+            System.out.print(numbers3[a] + ", ");
+            if (b == numbers3.length - 1) {
                 System.out.print(numbers3[numbers3.length - 1] + ".");
             } else {
-                System.out.print(numbers3[j] + ", ");
+                System.out.print(numbers3[b] + ", ");
             }
-            j += 2;
-            i += 2;
+            b += 2;
+            a += 2;
         }
         System.out.println();
         System.out.println("    Задача 3");
@@ -55,18 +55,32 @@ public class Main {
             }
         }
         System.out.println();
-        j=9;
-        i=8;
-        while ( i >= 0 ) {
-            System.out.print(numbers3[j] + ", ");
-            if (i == 0) {
+        b=9;
+        a=8;
+        while ( a >= 0 ) {
+            System.out.print(numbers3[b] + ", ");
+            if (a == 0) {
                 System.out.print(numbers3[0] + ".");
             } else {
-                System.out.print(numbers3[i] + ", ");
+                System.out.print(numbers3[a] + ", ");
             }
-            j -= 2;
-            i -= 2;
+            b -= 2;
+            a -= 2;
         }
+        System.out.println();
+        System.out.println("    Задача 4");
+        for (int i = 0; i<numbers1.length; i++){
+        if(numbers1[i]%2!=0) {
+            numbers1[i]=numbers1[i]+1;
+        }
+        if (i == numbers1.length - 1) {
+                System.out.println(numbers1[i]);
+                break;
+        }
+        System.out.print(numbers1[i]+", ");
+        }
+        System.out.println();
+
     }
 
 }
