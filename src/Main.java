@@ -1,17 +1,27 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("    Задача 1");
+        System.out.println("    Задача 1 и 2");
         int []numbers1 = new int [3];
         numbers1[0]=1;
         numbers1[1]=2;
         numbers1[2]=3;
         for (int i = 0; i < 3; i++) {
-            System.out.print(numbers1[i] + " ");
+            if (i==numbers1.length-1) {
+                System.out.print(numbers1[numbers1.length - 1]+".");
+            }
+            else {
+                System.out.print(numbers1[i] + ", ");
+            }
         }
         System.out.println();
             double []numbers2 = {1.57,7.654,9.986};
         for (int i = 0; i < 3; i++) {
-            System.out.print(numbers2[i] + " ");
+            if (i==numbers2.length-1) {
+                System.out.print(numbers2[numbers2.length - 1]+".");
+            }
+            else {
+                System.out.print(numbers2[i] + ", ");
+            }
         }
         System.out.println();
         int[] numbers3 = new int[10];
@@ -20,8 +30,13 @@ public class Main {
         while (i < numbers3.length ) {
             numbers3[i]=0;
             numbers3[j]=1;
-            System.out.print(numbers3[i]+" ");
-            System.out.print(numbers3[j]+" ");
+            System.out.print(numbers3[i]+", ");
+            if (j==numbers3.length-1) {
+                System.out.print(numbers3[numbers3.length - 1]+".");
+            }
+            else {
+                System.out.print(numbers3[j] + ", ");
+            }
             j+=2;
             i+=2;
         }
