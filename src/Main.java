@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("    Задача 1 и 2");
@@ -73,13 +75,9 @@ public class Main {
         if(numbers1[i]%2!=0) {
             numbers1[i]=numbers1[i]+1;
         }
-        if (i == numbers1.length - 1) {
-                System.out.println(numbers1[i]);
-                break;
+
         }
-        System.out.print(numbers1[i]+", ");//Idea ругалась на метод Arrays.toString(), поэтому так))
-        }
-        System.out.println();
+        System.out.println(Arrays.toString(numbers1));
 
     }
 
